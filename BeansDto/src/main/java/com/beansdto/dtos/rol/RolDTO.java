@@ -1,14 +1,11 @@
 package com.beansdto.dtos.rol;
 
-import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import com.beansdto.dtos.base.BaseDTO;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 @XmlRootElement(name = "rol")
 public class RolDTO extends BaseDTO {
