@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "inventario")
 @Data
-public class InverntarioDTO extends BaseDTO {
+public class InventarioDTO extends BaseDTO {
     private static final long serialVersionUID = 1L;
     private Integer Id_Producto;
     private Integer Id_Usuario;
