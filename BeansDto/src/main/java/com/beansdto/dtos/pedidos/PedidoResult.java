@@ -1,6 +1,5 @@
 package com.beansdto.dtos.pedidos;
 
-<<<<<<< HEAD
 import com.beansdto.dtos.base.BaseResult;
 
 import java.util.List;
@@ -17,7 +16,4 @@ public class PedidoResult extends BaseResult<PedidoDTO>{
 
     public void setPedidos(List<PedidoDTO> pedidos){super.setList(pedidos);}
 
-=======
-public class PedidoResult {
->>>>>>> 34b4adb00779896bc30d3e229191ddfc5bbc06b0
 }

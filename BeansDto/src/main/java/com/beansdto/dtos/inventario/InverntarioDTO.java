@@ -1,9 +1,5 @@
 package com.beansdto.dtos.inventario;
 
-<<<<<<< HEAD
-public class InverntarioDTO {
-=======
-
 import com.beansdto.dtos.base.BaseDTO;
 import lombok.Data;
 
@@ -16,6 +12,4 @@ public class InverntarioDTO extends BaseDTO {
     private Integer Id_Producto;
     private Integer Id_Usuario;
     private int cantidad;
-
->>>>>>> 34b4adb00779896bc30d3e229191ddfc5bbc06b0
 }

@@ -1,9 +1,5 @@
 package com.beansdto.dtos.producto;
 
-<<<<<<< HEAD
-public class ProductoDTO {
-}
-=======
 import com.beansdto.dtos.base.BaseDTO;
 import lombok.Data;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -18,5 +14,3 @@ public class ProductoDTO extends BaseDTO {
     private String descripcion;
     private double precio;
 }
-
->>>>>>> 34b4adb00779896bc30d3e229191ddfc5bbc06b0

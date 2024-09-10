@@ -1,6 +1,6 @@
 package com.beansdto.dtos.reseña;
 
-<<<<<<< HEAD
+
 import com.beansdto.dtos.base.BaseDTO;
 import lombok.Data;
 
@@ -12,7 +12,4 @@ public class ReseñaDTO extends BaseDTO {
     private int calificacion;
     private String comentario;
     private String fecha;
-=======
-public class ReseñaDTO {
->>>>>>> 34b4adb00779896bc30d3e229191ddfc5bbc06b0
 }

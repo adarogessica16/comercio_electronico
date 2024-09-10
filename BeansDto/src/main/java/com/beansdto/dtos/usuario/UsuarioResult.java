@@ -1,8 +1,5 @@
 package com.beansdto.dtos.usuario;
 
-<<<<<<< HEAD
-public class UsuarioResult {
-=======
 import java.util.List;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
@@ -29,5 +26,4 @@ public class UsuarioResult extends BaseResult<UsuarioDTO> {
     public void setUsuarios(List<UsuarioDTO> usuarios) {
         super.setList(usuarios);
     }
->>>>>>> 34b4adb00779896bc30d3e229191ddfc5bbc06b0
 }

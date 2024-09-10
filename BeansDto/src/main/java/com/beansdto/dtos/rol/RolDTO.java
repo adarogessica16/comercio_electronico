@@ -1,8 +1,5 @@
 package com.beansdto.dtos.rol;
 
-<<<<<<< HEAD
-public class RolDTO {
-=======
 import jakarta.xml.bind.annotation.XmlRootElement;
 import com.beansdto.dtos.base.BaseDTO;
 import lombok.Data;
@@ -22,5 +19,5 @@ public class RolDTO extends BaseDTO {
     public String toString() {
         return "RolDTO [id=" + getId() + ", nombre=" + nombre + ", descripcion=" + descripcion + "]";
     }
->>>>>>> 34b4adb00779896bc30d3e229191ddfc5bbc06b0
+
 }

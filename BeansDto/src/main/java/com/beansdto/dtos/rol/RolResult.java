@@ -1,8 +1,5 @@
 package com.beansdto.dtos.rol;
 
-<<<<<<< HEAD
-public class RolResult {
-=======
 import java.util.List;
 
 import jakarta.xml.bind.annotation.XmlElement;
@@ -30,5 +27,4 @@ public class RolResult extends BaseResult<RolDTO> {
     public void setRoles(List<RolDTO> roles) {
         super.setList(roles);
     }
->>>>>>> 34b4adb00779896bc30d3e229191ddfc5bbc06b0
 }
