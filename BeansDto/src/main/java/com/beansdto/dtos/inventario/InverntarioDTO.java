@@ -3,8 +3,6 @@ package com.beansdto.dtos.inventario;
 
 import com.beansdto.dtos.base.BaseDTO;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -15,10 +13,5 @@ public class InverntarioDTO extends BaseDTO {
     private Integer Id_Producto;
     private Integer Id_Usuario;
     private int cantidad;
-
-    @Override
-    public String toString() {
-        return "InventarioDTO [ idProducto=" + Id_Producto + ", idUsuario=" + Id_Usuario+ "Cantidad" +cantidad+ "]";
-    }
 
 }

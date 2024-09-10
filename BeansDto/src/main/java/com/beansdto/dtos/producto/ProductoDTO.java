@@ -2,9 +2,6 @@ package com.beansdto.dtos.producto;
 
 import com.beansdto.dtos.base.BaseDTO;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "producto")
@@ -16,10 +13,5 @@ public class ProductoDTO extends BaseDTO {
     private String nombre;
     private String descripcion;
     private double precio;
-
-    @Override
-    public String toString() {
-        return "ProductoDTO [idCategoria=" + Id_Categoria + ", idUsuario=" + Id_Usuario+ "nombre=" + nombre + ", descripcion=" + descripcion + ", precio=" + precio + "]";
-    }
 }
 
