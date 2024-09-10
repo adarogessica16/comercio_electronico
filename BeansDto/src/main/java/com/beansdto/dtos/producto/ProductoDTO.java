@@ -1,14 +1,14 @@
 package com.beansdto.dtos.producto;
 
 import com.beansdto.dtos.base.BaseDTO;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "producto")
-@Getter
-@Setter
+@Data
 public class ProductoDTO extends BaseDTO {
     private static final long serialVersionUID = 1L;
     private Integer Id_Categoria;
