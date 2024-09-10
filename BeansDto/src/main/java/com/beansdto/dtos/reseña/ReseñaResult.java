@@ -1,5 +1,6 @@
 package com.beansdto.dtos.reseña;
 
+<<<<<<< HEAD
 import com.beansdto.dtos.base.BaseResult;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
@@ -15,4 +16,7 @@ public class ReseñaResult  extends BaseResult<ReseñaDTO> {
 
     public void setPedidos(List<ReseñaDTO> resenhas){super.setList(resenhas);}
 
+=======
+public class ReseñaResult {
+>>>>>>> 34b4adb00779896bc30d3e229191ddfc5bbc06b0
 }
