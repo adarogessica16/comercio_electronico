@@ -8,8 +8,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Data
 public class ProductoDTO extends BaseDTO {
     private static final long serialVersionUID = 1L;
-    private Integer Id_Categoria;
-    private Integer Id_Usuario;
+    private Integer idCategoria;
+    private Integer idUsuario;
     private String nombre;
     private String descripcion;
     private double precio;

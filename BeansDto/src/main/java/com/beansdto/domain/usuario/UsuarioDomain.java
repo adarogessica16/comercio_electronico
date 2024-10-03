@@ -1,20 +1,16 @@
 package com.beansdto.domain.usuario;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
-
-
 import com.beansdto.domain.base.BaseDomain;
+import com.beansdto.domain.rol.RolDomain;
+
+import java.util.Set;
+
 @Data
 @Entity
 @Table(name = "usuarios")
 public class UsuarioDomain implements BaseDomain {
-
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -28,6 +24,9 @@ public class UsuarioDomain implements BaseDomain {
     @Column(name = "apellido")
     private String apellido;
 
+    @Column(name = "username")
+    private String username;
+
     @Column(name = "email")
     private String email;
 
@@ -40,7 +39,7 @@ public class UsuarioDomain implements BaseDomain {
     @Column(name = "direccion")
     private String direccion;
 
-    @Column(name = "Id_Rol")
-    private Integer Id_Rol;
-
+    @ManyToOne
+    @JoinColumn(name = "Id_Rol")
+    private RolDomain rol;
 }

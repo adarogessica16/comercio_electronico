@@ -1,32 +1,28 @@
 package com.beansdto.domain.producto;
 
 import com.beansdto.domain.base.BaseDomain;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.beansdto.domain.categoria.CategoriaDomain;
+import com.beansdto.domain.usuario.UsuarioDomain;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
 @Entity
 @Table(name = "productos")
-
 public class ProductoDomain implements BaseDomain {
-
-    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "Id_producto", nullable = false, unique = true)
-    private Integer Id_Producto;
+    @Column(name = "idProducto", nullable = false, unique = true)
+    private Integer idProducto;
 
-    @Column(name = "Id_categoria")
-    private Integer Id_Categoria;
+    @ManyToOne
+    @JoinColumn(name = "idCategoria", nullable = false)
+    private CategoriaDomain categoria;
 
-    @Column(name = "Id_usuario")
-    private Integer id_Usuario;
+    @ManyToOne
+    @JoinColumn(name = "idUsuario", nullable = false)
+    private UsuarioDomain usuario;
 
     @Column(name = "nombre")
     private String nombre;
@@ -36,6 +32,4 @@ public class ProductoDomain implements BaseDomain {
 
     @Column(name = "precio")
     private double precio;
-
 }
-

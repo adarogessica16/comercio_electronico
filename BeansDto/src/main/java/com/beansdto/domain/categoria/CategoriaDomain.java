@@ -17,8 +17,8 @@ public class CategoriaDomain implements BaseDomain {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "Id_categoria", nullable = false, unique = true)
-    private Integer Id_Categoria;
+    @Column(name = "idCategoria", nullable = false, unique = true)
+    private Integer idCategoria;
 
     @Column(name = "nombre")
     private String nombre;
